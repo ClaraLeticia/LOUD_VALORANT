@@ -92,18 +92,7 @@
         <h1 class="titulo1">Próximo confronto</h1>
         <img src="../img/loudlogo.png">
         <p class="m-item-team-tag">LOUD</p>
-        <?php
 
-        $url = "https://www.vlr.gg/team/6961/loud";
-        $dados = file_get_contents($url);
-        $var1 = explode('<div class="m-item-logo mod-right">', $dados);
-        $var2 = explode("</span>", $var1[1]);
-        $var3 = explode('<div class="m-item-date">', $dados);
-        $var4 = explode('</div>', $var3[1]);
-        echo "<div id='data'>" . $var4[0] . "</div>";
-        echo "<div id='logo'>" . $var2[0] . "</div>";
-
-        ?>
     </div>
     <footer>
         <div id="redes">
